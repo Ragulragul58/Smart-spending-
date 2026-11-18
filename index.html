@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Spending Manager</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f6fc;
+    color: #222;
+}
+
+header {
+    background: #20245c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #353a85;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #343a91, #7778e8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #343a91;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+h2 {
+    text-align: center;
+    color: #343a91;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0001;
+    text-align: center;
+}
+
+.card h3 {
+    color: #343a91;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+}
+
+.details {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    line-height: 2;
+    box-shadow: 0 4px 12px #0001;
+}
+
+footer {
+    background: #20245c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Smart Spending Manager</h1>
+    <p>Personal Expense Management System</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#modules">Modules</a>
+    <a href="#technology">Technology</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h1>Smart Spending Manager</h1>
+    <p>Manage Your Expenses in a Simple and Smart Way</p>
+    <p>Java Based Desktop Application</p>
+    <a href="#about" class="btn">Explore Project</a>
+</div>
+
+<section id="about">
+    <h2>About The Project</h2>
+    <div class="details">
+        <p>
+        Smart Spending Manager is a Java-based desktop application
+        designed to record and review personal expense information.
+        It helps users organise their daily expenses and understand
+        their spending habits.
+        </p>
+        <br>
+        <p>
+        The application uses Java Swing for its graphical user
+        interface and CSV/Text files for storing expense details.
+        It provides separate Transactions and Analytics sections.
+        </p>
+    </div>
+</section>
+
+<section id="objectives">
+    <h2>Project Objectives</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Easy Management</h3>
+            <p>To organise personal expense information easily.</p>
+        </div>
+
+        <div class="card">
+            <h3>GUI Design</h3>
+            <p>To develop a user-friendly interface using Java Swing.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Storage</h3>
+            <p>To store expense information using CSV/Text files.</p>
+        </div>
+
+        <div class="card">
+            <h3>Expense Analysis</h3>
+            <p>To provide a separate area for reviewing expenses.</p>
+        </div>
+    </div>
+</section>
+
+<section id="modules">
+    <h2>Project Modules</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>🖥️ GUI Module</h3>
+            <p>Provides a graphical interface using Java Swing.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧾 Transactions Module</h3>
+            <p>Provides access to expense transaction information.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Analytics Module</h3>
+            <p>Provides a separate area to review expense information.</p>
+        </div>
+
+        <div class="card">
+            <h3>📁 File Storage Module</h3>
+            <p>Stores application data using CSV/Text files.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="technology">
+    <h2>Technologies Used</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Java</h3>
+            <p>Programming Language</p>
+        </div>
+
+        <div class="card">
+            <h3>Java Swing</h3>
+            <p>Graphical User Interface</p>
+        </div>
+
+        <div class="card">
+            <h3>VS Code</h3>
+            <p>Development Environment</p>
+        </div>
+
+        <div class="card">
+            <h3>CSV / Text Files</h3>
+            <p>Local Data Storage</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Advantages</h2>
+    <div class="details">
+        <p>✔ Simple graphical user interface</p>
+        <p>✔ Easy expense information organisation</p>
+        <p>✔ Local data storage</p>
+        <p>✔ No separate MySQL server required</p>
+        <p>✔ Demonstrates Java programming concepts</p>
+    </div>
+</section>
+
+<section>
+    <h2>Future Enhancements</h2>
+    <div class="details">
+        <p>➤ Backup and restore facilities</p>
+        <p>➤ Additional search and filtering options</p>
+        <p>➤ Detailed charts and summaries</p>
+        <p>➤ Export and print options</p>
+        <p>➤ User authentication</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Project Details</h2>
+    <div class="details">
+        <p><b>Student Name:</b> M. Ragul</p>
+        <p><b>Register Number:</b> 814725104125</p>
+        <p><b>Course:</b> CS25C09 – Java Programming</p>
+        <p><b>College:</b> SRM TRP Engineering College</p>
+        <p><b>Academic Year:</b> 2026–2027</p>
+    </div>
+</section>
+
+<footer>
+    <p>Smart Spending Manager</p>
+    <p>Developed by M. Ragul</p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
